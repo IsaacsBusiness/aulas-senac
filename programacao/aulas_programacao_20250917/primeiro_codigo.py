@@ -64,11 +64,12 @@ class Carro:
     def __init__(self, modelo, placa):
         self.modelo = modelo
         self.placa = placa
-        self.disponivel = True
+        self.disponivel = False
 
     def __str__(self):
         status = "Disponível" if self.disponivel else "Indisponível"
         return f"{self.modelo} - {self.placa} - {status}"
 
-        carro = Carro("Corolla", "ABC-1234")
-        print(carro)
+
+carro = Carro("Corolla", "ABC-1R34")
+print(carro, f"\n")
