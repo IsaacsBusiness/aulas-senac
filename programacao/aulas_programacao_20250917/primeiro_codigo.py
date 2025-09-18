@@ -68,9 +68,29 @@ class Carro:
 
     def __str__(self):
         status = "Disponível" if self.disponivel else "Indisponível"
-        return f"{self.modelo} - {self.placa} - {status}"
+        return f"{self.modelo} - Placa: {self.placa} - {status}"
 
 
 carro = Carro("Corolla", "ABC-1R34")
 print(carro, f"\n")
 
+
+class ClienteCarro:
+    def __init__(self, nome, telefone, carro):
+        self.nome = nome
+        self.telefone = telefone
+        self.carro = carro
+
+    def solicitarCarro(self, carro):
+        if carro.disponivel:
+            carro.disponivel = False
+            print(
+                f"{self.nome} alugou o {carro.modelo} - Núm. de contato - {self.telefone}\n"
+            )
+        else:
+            print(f"Carro solicitado (Modelo: {carro.modelo} - Placa: {carro.placa}), não está disponível.\n")
+
+
+cliente = ClienteCarro("Ana", "(31)98888-8888", carro)
+cliente.solicitarCarro(carro)
+print(carro, f"\n")
