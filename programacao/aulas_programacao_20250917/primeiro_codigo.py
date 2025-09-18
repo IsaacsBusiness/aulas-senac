@@ -64,7 +64,7 @@ class Carro:
     def __init__(self, modelo, placa):
         self.modelo = modelo
         self.placa = placa
-        self.disponivel = False
+        self.disponivel = True
 
     def __str__(self):
         status = "Disponível" if self.disponivel else "Indisponível"
