@@ -17,13 +17,12 @@ class Matricula:
         self.aluno = aluno
         self.disciplina = disciplina
         self.data_matricula = data_matricula
-        self.notas = None
+        self.notas = []
+        self.nota = None  # Nota associada à matrícula
 
     def associarNota(self, nota: Nota):
         self.nota = nota
-        print(
-            f"Nota associada à matrícula {self.id} na disciplina {self.disciplina.nome}."
-        )
+        f"\nNota associada à matrícula {self.id} na disciplina {self.disciplina.nome}."
 
     def __str__(self):
         return f"Matrícula {self.id}: {self.aluno.nome} em {self.disciplina.nome}, Data: {self.data_matricula.strftime('%Y-%m-%d')}"
@@ -40,7 +39,9 @@ class Disciplina:
     def registrarAluno(self, matricula: Matricula) -> bool:
         if self.vagas > len(self.alunos_matriculados):
             self.alunos_matriculados.append(matricula)
-            print(f"Aluno {matricula.aluno.nome} registrado na disciplina {self.nome}.")
+            print(
+                f"\nAluno {matricula.aluno.nome} registrado na disciplina {self.nome}."
+            )
             return True
         else:
             print(f"Não há vagas disponíveis na disciplina {self.nome}.")
@@ -48,7 +49,7 @@ class Disciplina:
 
     def atribuirProfessor(self, professor):
         self.professor = professor
-        print(f"Professor {professor.nome} atribuído à disciplina {self.nome}.")
+        print(f"\nProfessor {professor.nome} atribuído à disciplina {self.nome}.")
 
     def __str__(self):
         return f"Disciplina {self.nome} (Código: {self.codigo}, Vagas: {self.vagas})"
@@ -86,14 +87,14 @@ class Professor:
         matricula.associarNota(nota)
 
     def visualizar_relatorio(self) -> str:
-        relatorio = f"Relatório do Professor {self.nome}:"
+        relatorio = f"Relatório do Professor(a) {self.nome}:"
         for disciplina in self.disciplinas:
             relatorio += f"\nDisciplina: {disciplina.nome}"
             for matricula in disciplina.alunos_matriculados:
                 nota_str = (
                     matricula.nota.valor if matricula.nota else "Sem nota registrada"
                 )
-                relatorio += f"\n  Aluno: {matricula.aluno.nome}, Nota: {nota_str}"
+                relatorio += f"\nAluno: {matricula.aluno.nome}, Nota: {nota_str}"
         return relatorio
 
 
@@ -108,7 +109,7 @@ class SistemaEscolar:
     def matricula_aluno(self, nome: str, id_aluno: int) -> Aluno:
         aluno = Aluno(nome, id_aluno)
         self.alunos.append(aluno)
-        print(f"Aluno {aluno.nome} matriculado ao sistema.")
+        print(f"\nAluno {aluno.nome} matriculado ao sistema.")
         return aluno
 
     def registrar_em_disciplina(self, aluno: Aluno, disciplina: Disciplina) -> bool:
@@ -125,7 +126,7 @@ class SistemaEscolar:
             self.matriculas.append(matricula)
 
             # Simular aprovação automática pelo administrador
-            f"Administrador aprovou a matrícula {matricula.id}."
+            print(f"Administrador aprovou a matrícula {matricula.id}.")
             return True
         return False
 
@@ -173,11 +174,11 @@ def main():
     # Visualizar relatórios
     print("\nRelatórios:")
     print(aluno1.visualizar_relatorio())
-    print("Relatórios:\n")
+    print("\nRelatórios:")
     print(aluno2.visualizar_relatorio())
-    print("Relatório do professor:")
+    print("\nRelatório do professor:")
     print(prof_ana.visualizar_relatorio())
-    print("Relatório do professor:")
+    print("\nRelatório do professor:")
     print(prof_beto.visualizar_relatorio())
 
 
