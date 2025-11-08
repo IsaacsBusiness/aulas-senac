@@ -5,32 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Login</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <form>
+    <div class="box">
+        <form>
 
-        <fieldset>
-            <legend>
-                <h1>Conectar ao Sistema</h1>
-            </legend>
+            <fieldset>
+                <legend>
+                    <h1>Conectar ao Sistema</h1>
+                </legend>
 
-            <label for="" class="">Matrícula:</label><br />
-            <input type="text" name="" id="matricula" class="" required><br /><br />
+                <div class="inputBox">
+                    <input type="text" name="" id="matricula" class="inputUser" required><br />
+                    <label for="" class="labelInput">Matrícula:</label><br />
+                </div>
 
-            <label for="" class="">Colaborador:</label><br />
-            <input type="text" name="" id="colaborador" class="" required><br /><br />
+                <div class="inputBox">
+                    <input type="text" name="" id="colaborador" class="inputUser" required><br />
+                    <label for="" class="labelInput">Colaborador:</label><br />
+                </div>
 
-            <label for="" class="">Senha:</label><br />
-            <input type="password" name="" id="senha" class="" required><br /><br />
+                <div class="inputBox">
+                    <input type="password" name="" id="senha" class="inputUser" required><br />
+                    <label for="" class="labelInput">Senha:</label><br />
+                </div>
 
-            <a href="lista_de_alunos.html"><input type="submit" value="Entrar" /></a>
+                <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                    <a href=""><input type="submit" name="btn-entrar" class="btn-entrar" value="Entrar" /></a>
+                </div>
+            </fieldset>
 
-        </fieldset>
-
-    </form>
+        </form>
+    </div>
 
 </body>
 
