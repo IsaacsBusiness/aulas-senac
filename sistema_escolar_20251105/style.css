@@ -88,8 +88,8 @@ input.btn-cadastrar[type="submit"] {
     /* usa a mesma fonte do container */
     text-decoration: none;
     padding: 10px 40px;
-    color: #A7C7E7;
-    background-color: #0077B6;
+    color: white;
+    background-color: rgb(26, 197, 40);
     border-radius: 50px;
     border: none;
     /* remove borda nativa */
@@ -106,6 +106,6 @@ button.btn-entrar:hover,
 input.btn-entrar:hover,
 button.btn-cadastrar:hover,
 input.btn-cadastrar[type="submit"]:hover {
-    background-color: #1E3A5F;
-    color: #A7C7E7;
+    background-color: rgb(15, 129, 25);
+    color: white;
 }
