@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Estoque</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="img_logo">
+            <img class="logo" src="img/a2e5f86a-6255-4836-b898-486021542a62.png" alt="">
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Controle de Estoque</h1>
+
+            <select id="usuario">
+                <option value="0">Selecione o tipo de cliente</option>
+                <option value="1">Vendedor</option>
+                <option value="2">Estoquista</option>
+                <option value="3">Admin</option>
+            </select>
+            <input type="password" id="inpSenha" placeholder="Senha">
+
+            <button type="button" onclick="trocaPaginas()">Entrar</button>
+
+            <p id="pMensagem" class="msg" hidden>Usuário ou senha inválidos!</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
