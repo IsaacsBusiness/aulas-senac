@@ -7,24 +7,28 @@
 }
 
 body {
+    margin-bottom: 50px;
     color: black;
-    margin: 20px;
     background-color: #4c5b37;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .content {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* 👈 isso centraliza tudo */
+    gap: 25px;
+    width: 100%;
+    padding: 20px;
 }
 
 .img_logo {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 0 10px;
 }
 
 .logo {
@@ -37,10 +41,6 @@ body {
 
 .container {
     font-weight: bold;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90%;
     max-width: 420px;
     min-height: 300px;
@@ -51,9 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* eixo horizontal */
     justify-content: center;
-    /* eixo vertical */
 }
 
 /* Título */
@@ -94,7 +92,7 @@ body {
 
 /* Mensagem de erro */
 .msg {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 14px;
     color: #7a1f1f;
     text-align: center;

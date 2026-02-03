@@ -1,35 +1,46 @@
-function trocaPaginas() {
+let timeoutMensagem; // controle global
 
+function mostrarMensagem(texto) {
+    const mensagem = document.getElementById("pMensagem");
+
+    mensagem.innerHTML = texto;
+    mensagem.hidden = false;
+
+    // limpa timeout anterior (se existir)
+    clearTimeout(timeoutMensagem);
+
+    // some após 3 segundos
+    timeoutMensagem = setTimeout(() => {
+        mensagem.hidden = true;
+    }, 3000);
+}
+
+function trocaPaginas() {
     let usuario = document.getElementById("usuario").value;
     let senha = document.getElementById("inpSenha").value;
-    let mensagem = document.getElementById("pMensagem");
 
-    //se a dropdownlist não estiver selecionada
+    // dropdown não selecionada
     if (usuario === "0") {
-        mensagem.innerHTML = "Selecione o tipo de usuário!";
+        mostrarMensagem("Selecione o tipo de usuário!");
     }
 
     // Vendedor
     else if (usuario === "1" && senha === "123") {
-        alert("Você será direcionado para a página de conta bancária.");
         window.location.href = "vendas.html";
     }
 
     // Estoquista
     else if (usuario === "2" && senha === "456") {
-        alert("Você será direcionado para a página de conta salário.");
         window.location.href = "estoque.html";
     }
 
     // Admin
     else if (usuario === "3" && senha === "789") {
-        alert("Você será direcionado para a página de benefício aposentadoria.");
-        window.location = "admin.html";
+        window.location.href = "admin.html";
     }
 
-    // Erro
+    // erro geral
     else {
-        mensagem.hidden = false
-        mensagem.innerHTML = "Usuário ou senha inválidos!";
+        mostrarMensagem("Usuário ou senha inválidos!");
     }
 }
