@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4c5b37;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+/* Wrapper */
+.estoque-wrapper {
+    background-color: #a3a371;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho */
+.img-logo {
+    /* tamanho da imagem */
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.estoque-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.estoque-header h1 {
+    font-size: 26px;
+}
+
+.btn-novo {
+    right: 500px;
+    position: absolute;
+    background-color: #4c5b37;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-novo:hover {
+    background-color: #3e4a2d;
+}
+
+/* Filtro */
+.estoque-filtro {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.estoque-filtro input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #666;
+}
+
+.estoque-filtro button {
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.estoque-filtro button:hover {
+    background-color: #4b5a36;
+}
+
+/* Tabela */
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #4c5b37;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c2c29a;
+}
+
+/* Ações */
+.acoes button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.acoes .editar:hover {
+    color: blue;
+}
+
+.acoes .excluir:hover {
+    color: red;
+}
