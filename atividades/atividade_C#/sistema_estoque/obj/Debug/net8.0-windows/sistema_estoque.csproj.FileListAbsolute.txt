@@ -1,0 +1,17 @@
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\bin\Debug\net8.0-windows\sistema_estoque.exe
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\bin\Debug\net8.0-windows\sistema_estoque.deps.json
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\bin\Debug\net8.0-windows\sistema_estoque.runtimeconfig.json
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\bin\Debug\net8.0-windows\sistema_estoque.dll
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\bin\Debug\net8.0-windows\sistema_estoque.pdb
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.Form1.resources
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.csproj.GenerateResource.cache
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.AssemblyInfoInputs.cache
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.AssemblyInfo.cs
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.csproj.CoreCompileInputs.cache
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.sourcelink.json
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.dll
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\refint\sistema_estoque.dll
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.pdb
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\sistema_estoque.genruntimeconfig.cache
+C:\Users\1089769\Documents\zack\aulas-senac\atividades\atividade_C#\sistema_estoque\sistema_estoque\obj\Debug\net8.0-windows\ref\sistema_estoque.dll
