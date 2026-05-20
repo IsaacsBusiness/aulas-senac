@@ -6,7 +6,7 @@ class Pessoa:
         
     def resultado(self):
         self.IMC = pesoPessoa / (alturaPessoa ** 2)
-        print("\n",self.nomePessoa, "seu IMC é de", self.IMC,"\n")
+        print(f"\n{self.nomePessoa} seu IMC é de {self.IMC:.2f}\n")
 
 if __name__ == "__main__":
     
