@@ -87,11 +87,12 @@ body {
 }
 
 .container button:hover {
-    background-color: green;
+    color: white;
+    background-color: #3e4a2d;
 }
 
 /* Mensagem de erro */
-.msg {
+.msg-error {
     margin-top: 20px;
     font-size: 14px;
     color: #7a1f1f;
